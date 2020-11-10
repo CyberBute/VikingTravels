@@ -35,8 +35,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,6 +64,44 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Carriers.cs">
+      <DependentUpon>VikingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CarrInsert.xaml.cs">
+      <DependentUpon>CarrInsert.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustInsert.xaml.cs">
+      <DependentUpon>CustInsert.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <DependentUpon>VikingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Journey.cs">
+      <DependentUpon>VikingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VikingModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VikingModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VikingModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VikingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VikingModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VikingModel.edmx</DependentUpon>
+    </Compile>
+    <Page Include="CarrInsert.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustInsert.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -86,13 +133,37 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <EntityDeploy Include="VikingModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VikingModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="VikingModel.edmx.diagram">
+      <DependentUpon>VikingModel.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="VikingModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>VikingModel.Context.cs</LastGenOutput>
+      <DependentUpon>VikingModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="VikingModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VikingModel.edmx</DependentUpon>
+      <LastGenOutput>VikingModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VikingAssignmentModelStoreContainer" CdmEntityContainer="VikingAssignmentEntities">
+    <EntitySetMapping Name="Carriers">
+      <EntityTypeMapping TypeName="VikingAssignmentModel.Carriers">
+        <MappingFragment StoreEntitySet="Carriers">
+          <ScalarProperty Name="carr_Id" ColumnName="carr_Id" />
+          <ScalarProperty Name="carr_FirstName" ColumnName="carr_FirstName" />
+          <ScalarProperty Name="carr_LastName" ColumnName="carr_LastName" />
+          <ScalarProperty Name="carr_Address" ColumnName="carr_Address" />
+          <ScalarProperty Name="carr_Tel" ColumnName="carr_Tel" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="VikingAssignmentModel.Customers">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="cust_Id" ColumnName="cust_Id" />
+          <ScalarProperty Name="cust_FirstName" ColumnName="cust_FirstName" />
+          <ScalarProperty Name="cust_LastName" ColumnName="cust_LastName" />
+          <ScalarProperty Name="cust_Address" ColumnName="cust_Address" />
+          <ScalarProperty Name="cust_Tel" ColumnName="cust_Tel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Journey">
+      <EntityTypeMapping TypeName="VikingAssignmentModel.Journey">
+        <MappingFragment StoreEntitySet="Journey">
+          <ScalarProperty Name="jour_Id" ColumnName="jour_Id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="maxTravelers" ColumnName="maxTravelers" />
+          <ScalarProperty Name="jour_Carrier" ColumnName="jour_Carrier" />
+          <ScalarProperty Name="pricePerTravelers" ColumnName="pricePerTravelers" />
+          <ScalarProperty Name="C_description" ColumnName="_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
