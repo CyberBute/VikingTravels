@@ -21,7 +21,7 @@ namespace VikingTravelsExam
         public System.DateTime endDate { get; set; }
         public Nullable<short> maxTravelers { get; set; }
         public string jour_Carrier { get; set; }
-        public short pricePerTravelers { get; set; }
-        public string C_description { get; set; }
+        public int pricePerTravelers { get; set; }
+        public string descriptions { get; set; }
     }
 }

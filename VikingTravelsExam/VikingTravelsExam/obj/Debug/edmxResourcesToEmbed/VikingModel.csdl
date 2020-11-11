@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="carr_Id" />
     </Key>
-    <Property Name="carr_Id" Type="Int32" Nullable="false" />
+    <Property Name="carr_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="carr_FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="carr_LastName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="carr_Address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
@@ -15,25 +15,25 @@
     <Key>
       <PropertyRef Name="cust_Id" />
     </Key>
-    <Property Name="cust_Id" Type="Int32" Nullable="false" />
+    <Property Name="cust_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="cust_FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="cust_LastName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="cust_Address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="cust_Tel" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="cust_Tel" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
   </EntityType>
   <EntityType Name="Journey">
     <Key>
       <PropertyRef Name="jour_Id" />
     </Key>
-    <Property Name="jour_Id" Type="Int32" Nullable="false" />
+    <Property Name="jour_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="city" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="startDate" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="endDate" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="maxTravelers" Type="Int16" />
     <Property Name="jour_Carrier" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="pricePerTravelers" Type="Int16" Nullable="false" />
-    <Property Name="C_description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="pricePerTravelers" Type="Int32" Nullable="false" />
+    <Property Name="descriptions" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
   </EntityType>
   <EntityContainer Name="VikingAssignmentEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Carriers" EntityType="Self.Carriers" />

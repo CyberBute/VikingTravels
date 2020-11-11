@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VikingTravelsExam.CarrUpdate">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAiAAAAAAAAAAIAIAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>CarrUpdate.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="VikingTravelsExam.CustUpdate">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAiAAAAAAAAAAIAIAAQAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>CustUpdate.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="VikingTravelsExam.JourUpdate">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAiEAAAAAAAAAIAIAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>JourUpdate.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="VikingTravelsExam.MainWindow">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAiCAAoAAAAAADAQAAAAAAAQAAAAAAgAAAAAAEAAQ=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

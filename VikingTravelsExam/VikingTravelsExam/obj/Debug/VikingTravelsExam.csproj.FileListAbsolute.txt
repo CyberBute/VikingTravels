@@ -19,7 +19,9 @@ C:\Users\chri17g5\Desktop\VikingTravels\VikingTravelsExam\VikingTravelsExam\obj\
 C:\Users\chri17g5\Desktop\VikingTravels\VikingTravelsExam\VikingTravelsExam\obj\Debug\VikingTravelsExam.pdb
 C:\Users\chri17g5\Desktop\VikingTravels\VikingTravelsExam\VikingTravelsExam\obj\Debug\MainWindow.g.cs
 C:\Users\chri17g5\Desktop\VikingTravels\VikingTravelsExam\VikingTravelsExam\obj\Debug\MainWindow.baml
-C:\Users\chri17g5\Desktop\VikingTravels\VikingTravelsExam\VikingTravelsExam\obj\Debug\CarrInsert.g.cs
-C:\Users\chri17g5\Desktop\VikingTravels\VikingTravelsExam\VikingTravelsExam\obj\Debug\CustInsert.g.cs
-C:\Users\chri17g5\Desktop\VikingTravels\VikingTravelsExam\VikingTravelsExam\obj\Debug\CarrInsert.baml
-C:\Users\chri17g5\Desktop\VikingTravels\VikingTravelsExam\VikingTravelsExam\obj\Debug\CustInsert.baml
+C:\Users\chri17g5\Desktop\VikingTravels\VikingTravelsExam\VikingTravelsExam\obj\Debug\CustUpdate.g.cs
+C:\Users\chri17g5\Desktop\VikingTravels\VikingTravelsExam\VikingTravelsExam\obj\Debug\CustUpdate.baml
+C:\Users\chri17g5\Desktop\VikingTravels\VikingTravelsExam\VikingTravelsExam\obj\Debug\CarrUpdate.g.cs
+C:\Users\chri17g5\Desktop\VikingTravels\VikingTravelsExam\VikingTravelsExam\obj\Debug\CarrUpdate.baml
+C:\Users\chri17g5\Desktop\VikingTravels\VikingTravelsExam\VikingTravelsExam\obj\Debug\JourUpdate.g.cs
+C:\Users\chri17g5\Desktop\VikingTravels\VikingTravelsExam\VikingTravelsExam\obj\Debug\JourUpdate.baml

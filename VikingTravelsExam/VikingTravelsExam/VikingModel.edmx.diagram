@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="7b3e1518be72416da7122d8188d8d071" Name="Diagram1">
+      <Diagram DiagramId="059acd3d613e4cff9c99e4dd6d54e4be" Name="Diagram1">
         <EntityTypeShape EntityType="VikingAssignmentModel.Carriers" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="VikingAssignmentModel.Customers" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="VikingAssignmentModel.Journey" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />

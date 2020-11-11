@@ -35,7 +35,7 @@
           <ScalarProperty Name="maxTravelers" ColumnName="maxTravelers" />
           <ScalarProperty Name="jour_Carrier" ColumnName="jour_Carrier" />
           <ScalarProperty Name="pricePerTravelers" ColumnName="pricePerTravelers" />
-          <ScalarProperty Name="C_description" ColumnName="_description" />
+          <ScalarProperty Name="descriptions" ColumnName="descriptions" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

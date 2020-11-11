@@ -67,17 +67,20 @@
     <Compile Include="Carriers.cs">
       <DependentUpon>VikingModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="CarrInsert.xaml.cs">
-      <DependentUpon>CarrInsert.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CustInsert.xaml.cs">
-      <DependentUpon>CustInsert.xaml</DependentUpon>
+    <Compile Include="CarrUpdate.xaml.cs">
+      <DependentUpon>CarrUpdate.xaml</DependentUpon>
     </Compile>
     <Compile Include="Customers.cs">
       <DependentUpon>VikingModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="CustUpdate.xaml.cs">
+      <DependentUpon>CustUpdate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Journey.cs">
       <DependentUpon>VikingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JourUpdate.xaml.cs">
+      <DependentUpon>JourUpdate.xaml</DependentUpon>
     </Compile>
     <Compile Include="VikingModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -94,11 +97,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>VikingModel.edmx</DependentUpon>
     </Compile>
-    <Page Include="CarrInsert.xaml">
+    <Page Include="CarrUpdate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CustInsert.xaml">
+    <Page Include="CustUpdate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="JourUpdate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -133,6 +140,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="UML\ClassDiagrams.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -149,12 +157,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="VikingModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>VikingModel.Context.cs</LastGenOutput>
       <DependentUpon>VikingModel.edmx</DependentUpon>
+      <LastGenOutput>VikingModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="VikingModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

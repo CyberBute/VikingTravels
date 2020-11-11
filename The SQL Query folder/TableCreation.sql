@@ -18,7 +18,7 @@ CREATE TABLE Customers
 	cust_FirstName NVARCHAR(255) NOT NULL,
 	cust_LastName NVARCHAR(255) NOT NULL,
 	cust_Address NVARCHAR(255)  NOT NULL,
-	cust_Tel NVARCHAR(255) UNIQUE,
+	cust_Tel NVARCHAR(255) UNIQUE NOT NULL,
 )
 
 /*

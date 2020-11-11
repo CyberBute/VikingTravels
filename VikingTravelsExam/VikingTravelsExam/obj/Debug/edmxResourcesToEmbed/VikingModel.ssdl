@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="carr_Id" />
     </Key>
-    <Property Name="carr_Id" Type="int" Nullable="false" />
+    <Property Name="carr_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="carr_FirstName" Type="nvarchar" MaxLength="255" Nullable="false" />
     <Property Name="carr_LastName" Type="nvarchar" MaxLength="255" Nullable="false" />
     <Property Name="carr_Address" Type="nvarchar" MaxLength="255" Nullable="false" />
@@ -15,25 +15,25 @@
     <Key>
       <PropertyRef Name="cust_Id" />
     </Key>
-    <Property Name="cust_Id" Type="int" Nullable="false" />
+    <Property Name="cust_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="cust_FirstName" Type="nvarchar" MaxLength="255" Nullable="false" />
     <Property Name="cust_LastName" Type="nvarchar" MaxLength="255" Nullable="false" />
     <Property Name="cust_Address" Type="nvarchar" MaxLength="255" Nullable="false" />
-    <Property Name="cust_Tel" Type="nvarchar" MaxLength="255" />
+    <Property Name="cust_Tel" Type="nvarchar" MaxLength="255" Nullable="false" />
   </EntityType>
   <EntityType Name="Journey">
     <Key>
       <PropertyRef Name="jour_Id" />
     </Key>
-    <Property Name="jour_Id" Type="int" Nullable="false" />
+    <Property Name="jour_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="title" Type="nvarchar" MaxLength="255" Nullable="false" />
     <Property Name="city" Type="nvarchar" MaxLength="255" Nullable="false" />
     <Property Name="startDate" Type="datetime" Nullable="false" />
     <Property Name="endDate" Type="datetime" Nullable="false" />
     <Property Name="maxTravelers" Type="smallint" />
     <Property Name="jour_Carrier" Type="nvarchar" MaxLength="255" />
-    <Property Name="pricePerTravelers" Type="smallint" Nullable="false" />
-    <Property Name="_description" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="pricePerTravelers" Type="int" Nullable="false" />
+    <Property Name="descriptions" Type="nvarchar" MaxLength="255" Nullable="false" />
   </EntityType>
   <EntityContainer Name="VikingAssignmentModelStoreContainer">
     <EntitySet Name="Carriers" EntityType="Self.Carriers" Schema="dbo" store:Type="Tables" />
